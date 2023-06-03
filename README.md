@@ -56,7 +56,7 @@ sudo apt install -y build-essential git curl librdkafka-dev
 Next we will install Mamba, this is a newer version of Conda that runs much faster and will help with installing all our Python packages
 
 ```.env
-cd ~/Documents
+cd ~/Downloads
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-pypy3-Linux-aarch64.sh
 bash Mambaforge-pypy3-Linux-aarch64.sh
 ```
@@ -96,7 +96,7 @@ python -m pip install -U pip
 Next we install Bazelisk, this is a launcher for Bazel that will help with creating the Tensorflow Addons and Text Packages from source
 
 ```.env
-cd ~/Documents
+cd ~/Downloads
 wget https://github.com/bazelbuild/bazelisk/releases/download/v1.17.0/bazelisk-linux-arm64
 chmod +x bazelisk-linux-arm64
 sudo mv bazelisk-linux-amd64 /usr/local/bin/bazel
@@ -122,7 +122,7 @@ pip install tensorflow==2.11.0
 Now we have to build Tensorflow Addons version 0.19 which is compatible with Tensorflow 2.11
 
 ```.env
-cd ~/Documents
+cd ~/Downloads
 git clone https://github.com/tensorflow/addons.git
 cd addons
 git checkout r0.19
